@@ -10,10 +10,15 @@
 </head>
 <body>
   
-  <div class="calculator">
-    <input type="number" class="display" readonly>
+  <div class="container" id="container">
 
-    <div class="keys">
+    <div class="header" id="header">
+      <h2 class="title" id="title">Calculator</h2>
+    </div>
+
+    <input type="text" class="display" id="display" readonly>
+
+    <div class="keys" id="keys">
 
       <button class="btn extra" onclick="clearDisplay()">AC</button>
       <button class="btn extra" onclick="addToScreen('%')">%</button>
