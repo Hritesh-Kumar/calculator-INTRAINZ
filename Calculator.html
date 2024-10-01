@@ -16,12 +16,14 @@
       <h2 class="title" id="title">Calculator</h2>
     </div>
 
-    <input type="text" class="display" id="display" readonly>
+    <div class="previous-display" id="previous-display"></div>
+
+    <input type="text" class="display" id="display" readonly placeholder="0">
 
     <div class="keys" id="keys">
 
       <button class="btn extra" onclick="clearDisplay()">AC</button>
-      <button class="btn extra" onclick="addToScreen('%')">%</button>
+      <button class="btn extra" onclick="addPercentage('%')">%</button>
       <button class="btn extra" onclick="square()">x²</button>
       <button class="btn operator" onclick="addToScreen('/')">&#247;</button>
 
